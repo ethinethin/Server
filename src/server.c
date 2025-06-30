@@ -221,6 +221,6 @@ broadcast_to_room(const char *room, const char *sender, const char *msg, int sen
 void
 error_out(char *err, int i)
 {
-    perror(err);
+    fprintf(stderr, "%s\n", err);
     exit(i);
 }
